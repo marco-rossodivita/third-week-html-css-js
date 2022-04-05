@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="it">
+
+
+
+<body background="https://digilander.libero.it/bongoboy/html/esercizi/esercizio_11/bg_color.gif">
+
+    <font color="blue">
+        <H1>PITTORI OLANDESI DELLA PRIMA META' DEL 600'</H1>
+    </font>
+
+    <table align="center" border>
+        <tr>
+            <td style="text-align: left">
+                <font color="blue"><strong>NOME</strong></font>
+            </td>
+            <td style="text-align: left">
+                <font color="blue"><strong>NASCINTA/MORTE</strong></font>
+            </td>
+            <td style="text-align: left">
+                <font color="blue"><strong>SOGGETTI TIPICI</strong></font>
+            </td>
+            <td style="text-align: left">
+                <font color="blue"><strong>INFLUENZE</strong></font>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+                <font color="blue">DIRCK VAN BABUREN</font>
+            </td>
+            <td style="text-align: left">
+                <font color="blue">(C. 1590-1624)</font>
+            </td>
+            <td style="text-align: left">
+                <font color="blue">RELIGIOSI</font>
+            </td>
+            <td style="text-align: left">
+                <font color="blue">CARAVAGGIO</font>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+                <font color="blue">JAN VAN GOYEN</font>
+            </td>
+            <td style="text-align: left">
+                <font color="blue">(1596-1656)</font>
+            </td>
+            <td style="text-align: left">
+                <font color="blue">PAESAGGI</font>
+            </td>
+            <td style="text-align: center">
+                <font color="blue">ESAIAS VAN DE VELDE</font>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+                <font color="blue">REMBRANDT VAN RIJN</font>
+            </td>
+            <td style="text-align: left">
+                <font color="blue">(1606-1669)</font>
+            </td>
+            <td style="text-align: left">
+                <font color="blue">RITRATTI</font>
+            </td>
+            <td style="text-align: left">
+                <font color="blue">LASTMAN E LIEVENSZ</font>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+                <font color="blue">JAN CORNELISZ VERSPRONCK</font>
+            </td>
+            <td style="text-align: left">
+                <font color="blue">(1597-1662)</font>
+            </td>
+            <td style="text-align: left">
+                <font color="blue">RITRATTI DI BAMBINI</font>
+            </td>
+            <td style="text-align: left">
+                <font color="blue">FRANS HALS</font>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+                <font color="blue">SIMON DE VLIEGER</font>
+            </td>
+            <td style="text-align: left">
+                <font color="blue">(1601-1653)</font>
+            </td>
+            <td style="text-align: left">
+                <font color="blue">PAESAGGI MARINI</font>
+            </td>
+            <td style="text-align: left">
+                <font color="blue">VROOM</font>
+            </td>
+        </tr>
+    </table>
+
+</body>

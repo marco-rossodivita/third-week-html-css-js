@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+}
+
+.tabella {
+    width: auto;
+    height: auto;
+    border: black solid 1px;
+    align-self: center;
+    background-color: whitesmoke;
+}
+
+td {
+    border: black solid 1px;
+}
+
+.break {
+    height: 1000px;
+}
+
+a {
+    text-align: right;
+}
+
+footer {
+    color: black;
+}

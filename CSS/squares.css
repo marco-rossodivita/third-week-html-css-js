@@ -1,0 +1,12 @@
+body {
+    background-color: burlywood;
+}
+
+#squares {
+    width: 300px;
+    height: 200px;
+    border: 15px solid black;
+    align-items: center;
+    background-color: whitesmoke;
+    margin-right: 50px
+}
