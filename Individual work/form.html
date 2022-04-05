@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>La mia pagina</title>
+</head>
+
+<body>
+    <form name="myform" method="post" action="http://www.mydomain.com/myformhandler.cgi">
+
+        <div align="center">
+            <select>
+                <option>Latte</option>
+                <option>Caffè</option>
+                <option>Tè</option>
+                </select>
+
+            <input type="radio" name="group1" value="Latte"> Latte<br>
+            <input type="radio" name="group1" value="Burro" checked> Burro<br>
+            <input type="radio" name="group1" value="Formaggio"> Formaggio
+
+            <input type="text" size="25" value="Scrivi qui il tuo nome!">
+            <input type="hidden" name="Language" value="Italian"> <br> Inserire Password : <input type="password" size="25">
+            <textarea name="marco" id="marco" cols="30" rows="10"></textarea>
+            <br><br>
+        </div>
+    </form>
+</body>
+
+</html>
+
+<!--
+    action=address;-> address è l'url del programma cgi a cui il contenuto
+                      deve essere inviato
+    method=post opp. method=get -> sono due metodi differenti di mandare dati al programma
+
+-->
