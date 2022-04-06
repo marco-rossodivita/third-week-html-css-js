@@ -9,9 +9,15 @@
 
 <body>
     <p>
-        <form name="f" action="/script/toserver" method="get" onsubmit="alert('Ciao da Marco!!!')">
-            name: <input type="text" id="name" /> <br/> home page: <input type="text" id="home" value="http://www.google.it" /> <br/> password: <input type="password" id="pswd" placeholder="marco" /> <br/>
-            <input type="button" value="ok" />
+        <form name="f" method="get" onsubmit="alert('Ciao da Marco!!!')">
+            selezione azienda: <select id="s">
+            <option>prima opzione</option>
+            <option>seconda opzione</option>
+            <option>terza opzione</option>
+            <option selected>quinta opzione</option>
+            </select><br> name: <input type="text" id="name" placeholder="marco" readonly/> <br> home page: <input type="text" id="home" value="http://www.google.it" /> <br> select your choice:<input type="checkbox" name="primo" /> select your choice:<input
+                type="checkbox" name="secondo" /> password: <input type="password" id="pswd" placeholder="marco" /> <br> Male or Female:<input type="radio" name="primo" /> Male<input type="radio" name="primo" /> Female <br>
+            <input type="submit" value="ok" disabled/>
             <input type="reset" value="annulla" />
         </form>
     </p>
