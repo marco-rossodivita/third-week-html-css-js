@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Titolo</title>
+</head>
+
+
+<body>
+
+    <p id="display">Primo paragrafo</p>
+    <button id="btn" onclick='caricaFile()'></button>
+    <!--QUANDO CLICCO, INVOCO LA MIA FUNZIONE IN SCRIPT-->
+
+    <script>
+        //Si crea una funzione in cui creiamo un'istanza 
+        //dell'oggetto built-in di JAVASCRIPT: XMLHTTPREQUEST
+        //Srve per creare connessioni AJAX
+
+        function caricaFile() {
+            const xhttp = new XMLHttpRequest();
+            //ha i suoi metodi
+            xhttp.open('GET', '../Individual Work/JAVASCRIPT/AJAX/testo.txt', true);
+            //APRE LA CONNESSIONE CON IL SERVER
+            //HA TRE ARGOMENTI: 
+            //-IL TIPO DI RICHIESTA (GET O POST)
+            //-IL NOME DEL FILE CHE VOGLIAMO RICHIEDERE (TESTO O TESTO SITO)
+            //-VALORE BOOLEANO (TRUE--->CONNESSIONE ASINCRONA)
+            xhttp.send();
+            //MANDA LA RICHIESTA AL SERVER
+
+            //LA PIU IMPORTANTE
+            xhttp.onreadystatechange = function() {
+                if (this.readyState === 4 && this.status === 200) {
+                    //manipoliamo ora la risposta del server
+                    document.getElementById('display').innerHTML = this.responseText;
+                    //questa è la risposta del server e la vado ad inserire nell'elemento display
+                    //nel body
+
+                    /**
+                     * CIOE' VISUALIZZO QUI LA RISPOSTA DEL SERVER, CIOE' IL TESTO NEL MIO FILE TXT!!!*/
+                }
+            }
+        }
+
+        /**
+         * Quando la pagina web comincia a comunicare con il server, essa
+         * apre la richiesta e la manda al server.
+         * Come faccio a sapere se il server abbia ricevuto la mia richiesta,
+         * se sta rispondendo alla mia richiesta..?
+         * CON READYSTATE!
+         * Ha i valori che vanno da 0 a 4:
+         * -0 non è stata inizializzata la richiesta
+         * -1 la connessione con il server è stata abilitata
+         * -2 il server ha ricevuto la richiesta  
+         * -3 il server sta processando la mia richiesta
+         * -4 il server ha finito di processare e mi ha inviato la risposta
+         * 
+         * COME RISPONDE IL SERVER?
+         * con lo status, un CODICE (200,300,400 dipende)
+         * -200 il server ha trovato quello che volevo e me lo sta inviando
+         * -404 errore, non ha trovato quello che chiedevo
+         * */
+
+
+
+
+
+        /**
+         * AJAX - ASYNCHRONOUS JS AND XML
+         * Permette di scambiare info tra il server e la webpage senza 
+         * dover ricaricare la pagina web
+         * In teoria serve un server(si installa o boh)
+         * 
+         * 
+         **/
+    </script>
+
+</body>
+
+
+
+
+</html>

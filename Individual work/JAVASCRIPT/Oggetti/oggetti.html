@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+<head></head>
+
+<body>
+
+    <h1>Titolo</h1>
+
+    <p id="display">Primo paragrafo</p>
+
+    <script>
+        //Un oggetto si dichiara come una variabile; const o let
+        let persona = {
+            nome: 'Marco',
+            cognome: 'Rossi',
+            eta: 30,
+            eta2: 56,
+            presentarsi: function() {
+                    document.getElementById('display').innerHTML =
+                        `Salve io sono ${this.nome} ${this.cognome} ed ho ${this.eta} anni`
+                } //metodo dell'oggetto
+        };
+        //un oggetto ha caratteristiche, denominate proprietà
+        persona.presentarsi();
+
+        //visualizza caratteristiche in console
+        console.log(persona.nome);
+        console.log(persona.eta);
+
+        //altro modo con le parentesi quadrate
+        let prop = 'cognome';
+        let prop2 = 'eta';
+        console.log(persona[prop2 + 2]);
+
+        persona.indirizzo = 'via Roma'; //aggiungo una caratteristica a persona
+        console.log(persona.indirizzo);
+
+        delete persona.indirizzo;
+        console.log(persona.indirizzo);
+
+        //ESERCIZIO
+        let gatto = {
+            razza: 'siamese',
+            colore: 'grigio',
+            nome: 'pippo',
+            azione: function() {
+                document.getElementById('display').innerHTML =
+                    `Ho un nuovo gatto di nome ${this.nome.toUpperCase()}, è un gatto ${this.colore} di razza ${this.razza}`;
+            }
+        }
+
+        gatto.azione();
+    </script>
+
+
+
+
+</body>
+
+</html>

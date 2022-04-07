@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+
+<body>
+
+
+    <script>
+        //Parametri passati per valore
+        let num = 10;
+
+        function prima(x) {
+            x = x - 5;
+            console.log(x);
+        }
+        prima(num);
+        console.log(num); //NUM RIMANE 10 NONOSTANTE ABBIAMO INVOCATO PRIMA
+        //NON E' STATO MODIFICATO IL VALORE
+
+        //POSSO DARE IL VALORE DI DEFAULT AL PARAMETRO
+        function seconda(x = 10) {
+            //codice
+        }
+        seconda() //se non scrivo nulla, viene assegnato 10 di default
+
+
+        //Operatore REST - QUANDO NON SO QUANTI PARAMETRI INVOCHERO'
+        function seconda(x, ...y) {
+            console.log(x); //10
+            console.log(y); //TUTTO IL RESTO IN ECCESSO
+        }
+        seconda(10, 20, 30, 40);
+        //Quindi va a raggruppare tutti gli argomenti in eccesso e me li ricompatta
+        //in un ARRAY
+        //Posso anche fare seconda(x,w,z, ...y) -> le prime tre le conosco, il resto no
+
+
+
+        //Callback
+        function test(x) {
+            return x * x;
+        }
+        console.log(test(10));
+        console.log(test); //MI RITORNA IL TEST DI TUTTA LA MIA FUNZIONE 
+        //STO PASSANDO IL CODICE DELLA MIA FUNZIONE COME PARAMETRO
+        function principale(x, callback) {
+            console.log('Valore di x: ', x);
+            console.log(callback(50));
+        }
+        principale(5, test);
+
+
+
+
+
+        //Sono funzioni passate come parametri; si usa quando si ha a che fare
+        //con codice che lavora in manier asincrona
+        //cioè sto lavorando con dei dati che mi vengono inviati dal server
+        //posso creare una funzione che si connette al server, richiede
+        //questi determinati dati; e finchè aspetta questi dati al ritorno dal server
+        //(l'operazione non è immediata) può eseguire altre operazioni!
+        //quando questi dati sono pronti e arrivano, JS comincia a maneggiarli
+        //SI LAVORA IN MANIERA ASINCRONA
+
+        /**
+         * RINVIA UNA RICHIESTA DI DETERMINATI DATI AL SERVER
+         * ESEGUE ALTRE OPERAZIONI NEL FRATTEMPO
+         * ALL'ARRIVO DEI DATI DAL SERVER, COMINCIA A MANEGGIARLI
+         * 
+         * LE CALLBACK QUINDI: 
+         * io uso una funzione per fare una richiesta al server;
+         * quando il server mi rimanda indietro i dati che ho richiesto
+         * con un callback vado a maneggiare questi dati
+         * */
+    </script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>

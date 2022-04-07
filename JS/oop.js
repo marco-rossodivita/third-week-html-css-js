@@ -1,4 +1,4 @@
-class Logger {
+export class Logger extends Object {
 
     name = new String()
     data = new Date()
@@ -58,3 +58,7 @@ class Logger {
 const L = new Logger();
 L.data = new Date('2022', '04', '06'); //ho preso la variabile data
 L.info(L.data); //DALLA CLASSE L
+
+class Utils {}
+
+export { Logger, Utils }

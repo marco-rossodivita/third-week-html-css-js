@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+
+    <h1>Titolo H1</h1>
+    <div>
+        <div id="numUtenti"></div>
+        <div id="nomeUtenti"></div>
+    </div>
+
+    <p id="display">Primo Paragrafo</p>
+
+    <footer id="footer"></footer>
+
+    <script>
+        /**
+         * JSON: JavaScript Object Notation
+         * è una maniera per immagazzinare informazioni in un formato
+         * molto simile ad un oggetto JavaScript
+         * L'oggetto JSON ricorda molto l'oggetto JS;
+         * Dentro le parentesi graffe abbiamo le proprietà
+         * 
+         * RICORDA CHE LE ULTIME PROPRIETA' NON DEVONO AVERE LA VIRGOLA
+         * 
+         * */
+
+
+
+        //Riutilizzo la funzione AJAX vista in precedenza
+        function caricaFile() {
+            const xhttp = new XMLHttpRequest();
+
+            xhttp.open('GET', 'esempio.json', true);
+            xhttp.send();
+
+            xhttp.onreadystatechange = function() {
+                if (this.readyState === 4 && this.status === 200) {
+                    console.log(JSON.parse(this.responseText));
+                }
+            }
+
+        }
+        //ANDIAMO A RICHIEDERE IL FILE JSON E VISUALIZZIAMOLO IN CONSOLE
+        caricaFile(); //INVOCO SENNO NON PARTE
+        //mi esce il codice scritto nel file JSON
+        //con "this.responseText" senza il parse, EH!
+
+        /**
+         * Non posso al momento però manipolare l'oggetto json in javascript
+         * Posso però convertire in un oggetto javascript per poi poterlo
+         * manipolare con JSON.parse!
+         * HO CONVERTITO DA OGGETTO JSON A JS
+         * 
+         * Quando invece vado ad inviare un oggetto JS AL SERVER(CHE ACCETTA JSON),
+         * si fa così:
+         * */
+
+        //OGGETTO JS
+        const obj = {
+            prop1: "stringa",
+            prop2: 200,
+            prop1: "stringa2",
+            prop2: 2000
+        };
+        //devo convertirlo in oggetto JSON, SEMPLICISSIMO
+        console.log(JSON.stringify(obj, false, 4)); //con stringify ho ottenuto il json
+        //passare sempre false
+        //4- numero di spazi tra le cose degli oggetti
+
+        //PART MISSING
+    </script>
+
+
+
+</body>
+
+</html>

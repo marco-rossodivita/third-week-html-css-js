@@ -1,0 +1,11 @@
+<!-- 
+    js è nato per rendere le pagine web dinamiche e fare in modo che l'utente possa
+    interagire con essa; è un linguaggio guidato dagli eventi(quando l'utente clicca con il mouse,
+    quando apre la finestra ecc.);
+    è un linguaggio orientato agli oggetti; ma usa anche i prototipi.
+    js è un linguaggio interpretato, non serve il compilatore, 
+    basta un browser.
+    è debolmente tipizzato, a differenza di altri linguaggi java in cui ogni variabile
+    deve essere dichiarata, qui non serve specificare il tipo.
+    è un linguaggio nato per il browser; 
+-->

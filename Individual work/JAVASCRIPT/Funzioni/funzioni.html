@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+    <script>
+        //TUTTI I TIPI DI FUNZIONE
+        //Le funzioni sono oggetti
+        function prima() {};
+        console.log(typeof prima);
+
+
+        //declaration (classico)
+        function nomeFunzione() {}; //creo la funzione
+        numeFunzione(); //la invoco dopo
+
+
+        //Function expression
+        //non serve dare un nome alla funzione perchè
+        //per richiamare questa funzione viene usato il nome della variabile
+        let variabile = function() {};
+        variabile();
+
+
+        //Arrow function
+        () => {}
+        //nelle parentesi tonde vanno inserite eventuali parametri
+        //il blocco di codice nelle parentesi graffe
+        //NON c'è un nome che identifica la funziona
+        //si USA QUESTA SINTASSI PER LE CALLBACK IN QUANTO E' SINTETICA
+
+
+        //method
+        let oggetto = {
+            prop: function() {}
+        };
+        //quando abiamo un oggetto, esso ha le sue proprietà;
+        //ad una proprietà possiamo assegnare una funzione
+        //che viene chiamata metodo
+        //anche in questo caso non serve dare un nome alla funzione perchè
+        //viene identificata dal nome della proprietà
+        oggetto.prop(); //HO INVOCATO
+
+
+
+        //IIFE - FUNCTION EXPRESSION
+        (function() {
+            console.log('ciao mondo')
+        })()
+        //VIENE INVOCATA IMMEDIATAMENTE, SENZA FARE ALTRO
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
