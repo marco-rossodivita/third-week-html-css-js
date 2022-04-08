@@ -1,0 +1,16 @@
+{
+    "name": "third-week-html-css",
+    "version": "1.0.0",
+    "description": "Excercises in class about html, css and js",
+    "main": "index.js",
+    "author": "Marco Rossodivita",
+    "license": "ISC",
+    "scripts": {
+        "start": "echo Hello World",
+        "dev": "",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "devDependencies": {
+        "lodash": "^4.17.21"
+    }
+}
